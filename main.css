@@ -24,6 +24,7 @@ body {
 .row {
   margin-right: -15px;
   margin-left: -15px;
+  display: block;
 }
 
 .shop-item {
@@ -34,8 +35,7 @@ body {
 
 .squaredOne {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
-	margin: 20px auto;
-	position: relative;
+	margin: 10px 10px 0 0;
   display: inline-block;
 }
 
@@ -43,14 +43,34 @@ body {
   display: inline-block;
   font-family: 'liquide', sans-serif;
   font-size: 24px;
-  margin: 20px 20px;
+  margin: 10px 0;
 }
 
 .delete {
   display: inline-block;
+  color: white;
 }
 
-.squaredOne label {
+.button {
+  border: 0 none;
+  border-radius: 36px;
+  padding: 12px 55px;
+  margin: 0 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  color: #red;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+}
+
+.button .red {
+  background: red;
+  color: white;
+  display: inline-block;
+}
+
+/*.squaredOne label {
 	cursor: pointer;
 	position: absolute;
 	width: 20px;
@@ -83,4 +103,4 @@ body {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity=100);
 	opacity: 1;
-}
+}*/

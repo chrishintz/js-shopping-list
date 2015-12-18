@@ -33,8 +33,8 @@ window.onload = function () {
     newItem.appendChild(itemNameDiv);
 
     var deleteDiv       = document.createElement("div");
-    deleteDiv.className = "delete";
-    deleteDiv.innerHTML = "X";
+    deleteDiv.className = "button";
+    deleteDiv.innerHTML = "<button class='red'>Delete</button>";
     newItem.appendChild(deleteDiv);
 
     // event listener for checkbox to mark as complete on a click function
