@@ -3,17 +3,31 @@
   <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="/shopping.js"></script>
+    <link rel="stylesheet" href="/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shopping List</title>
   </head>
-  <body>
-    <h1 class="header">Shopping List</h1>
-    <form id="addToList">
-      <input id="addItem" name ="addItem" type="text" class="addItem"/>
-      <button type="submit" id="submit" class="submit">Submit</button>
-    </form>
+  <body >
+    <div class="container">
+      <span>Shop Til You Drop</span>
+    </div>
+
     <div class="list">
       <ul class="unordered-list" id="list">
+          <div class="checkbox">
+          </div>
+          <div class="item-name">
+          </div>
+          <div class="delete">
+          </div>
       </ul>
+    </div>
+    <div class="row input-row">
+      <form>
+        <input id="input" type="text" class="form-control"/>
+        <button id="submit" class="btn-xs btn-success">Add</button>
+      </form>
+    </div>
   </body>
 </html>
 
