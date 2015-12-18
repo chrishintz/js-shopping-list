@@ -1,0 +1,86 @@
+body {
+  background-image: url(shopping.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.button-holder {
+  text-align: right;
+  margin: 10px auto;
+}
+
+.btn {
+  width: 50%;
+}
+
+.title {
+  font-family: 'liquide', sans-serif;
+  font-size: 42px;
+  text-align: center;
+  color: #34AADC;
+  outline-color: invert;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.shop-item {
+  list-style-type: none;
+  display: inline-block;
+  color: #FF5964;
+}
+
+.squaredOne {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+	margin: 20px auto;
+	position: relative;
+  display: inline-block;
+}
+
+.name {
+  display: inline-block;
+  font-family: 'liquide', sans-serif;
+  font-size: 24px;
+  margin: 20px 20px;
+}
+
+.delete {
+  display: inline-block;
+}
+
+.squaredOne label {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 4px;
+	top: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+}
+
+.squaredOne label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: #00bf00;
+	top: 2px;
+	left: 2px;
+}
+
+.squaredOne label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+}
+
+.squaredOne input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}

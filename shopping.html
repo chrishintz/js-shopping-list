@@ -3,44 +3,34 @@
   <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="/shopping.js"></script>
+    <link type="text/css" rel="stylesheet" href="/main.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shopping List</title>
   </head>
   <body >
     <div class="container">
-      <span>Shop Til You Drop</span>
-    </div>
-
-    <div class="list">
-      <ul class="unordered-list" id="list">
-          <div class="checkbox">
+      <div class="title">
+        <span>Shop Til You Drop</span>
+      </div>
+      <div class ="row">
+        <ul class="row" id="list">
+          <div>
           </div>
-          <div class="item-name">
+          <div class="name">
           </div>
           <div class="delete">
           </div>
-      </ul>
-    </div>
-    <div class="row input-row">
-      <form>
-        <input id="input" type="text" class="form-control"/>
-        <button id="submit" class="btn-xs btn-success">Add</button>
-      </form>
+        </ul>
+      </div>
+      <div class="">
+        <form>
+          <input id="input" type="text" class="form-control"/>
+          <div class="button-holder">
+            <button id="submit" class="btn btn-success add-btn">Add</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
-
-
-
-
-
-
-
-<!-- <h1>Shopping List</h1>
-<input type="text" id="input" name="input"/>
-<button id="btn">Add to List</button>
-<div>
-  <ul id="todo">
-  </ul>
-</div> -->

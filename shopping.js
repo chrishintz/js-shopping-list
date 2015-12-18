@@ -12,7 +12,7 @@ window.onload = function () {
     // upon the click of the submit event listener... a new item is created.
     // Assign to NEW variable which equals document.createElement('li'), since it becomes a list item.
     var newItem = document.createElement('li');
-    newItem.setAttribute('class', 'single-item');
+    newItem.setAttribute('class', 'shop-item');
     newItem.setAttribute('id', 'item');
     // .setAttribute on the new variable allows you to set class and id for yet to made items
 
@@ -20,15 +20,15 @@ window.onload = function () {
     // with .className on the new variable assigned to create the div.
     // Append the new div to the newItem variable with appendChild
     var checkboxDiv = document.createElement("div");
-    checkboxDiv.className = "checkbox";
-    checkboxDiv.innerHTML = "[ ]";
+    checkboxDiv.className = "squaredOne";
+    checkboxDiv.innerHTML = "<input type='checkbox' value='none' id='slideOne' name='check'/>";
     newItem.appendChild(checkboxDiv);
 
     // Create another variable for the div to hold the input value.
     // Add the input.value by calling the variable.innerHTML equal to the input.value
     // Then append that new variable (itemNameDiv) to the newItem variable from above
     var itemNameDiv = document.createElement("div");
-    itemNameDiv.className = "item-name";
+    itemNameDiv.className = "name";
     itemNameDiv.innerHTML = input.value;
     newItem.appendChild(itemNameDiv);
 
